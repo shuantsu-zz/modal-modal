@@ -5,7 +5,7 @@ function initModals() {
     wrapper.appendChild(el);
   }
 
-  document.querySelectorAll('[data-rel="modal"]').forEach(el => {
+  document.querySelectorAll('.modal').forEach(el => {
     const blackoutElem = document.createElement('div');
 
     blackoutElem.style.display = 'none'; // Avoid modal flash when document load
