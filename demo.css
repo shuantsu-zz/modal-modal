@@ -34,26 +34,3 @@ p {
   text-indent: 40px;
   margin-top: 10px;
 }
-
-/* Modal styling */
-
-.blackout, .modal {
-  transition: .8s all!important;
-}
-
-.blackout.hidden {
-  display: flex!important;
-  opacity: 0;
-  pointer-events: none;
-}
-.blackout.show {
-  display: flex!important;
-  opacity: 1;
-}
-
-.show .modal {
-  transform: scale(1);
-}
-.hidden .modal {
-  transform: scale(.8);
-}

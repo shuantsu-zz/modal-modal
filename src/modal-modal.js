@@ -8,30 +8,6 @@ function initModals() {
   document.querySelectorAll('[data-rel="modal"]').forEach(el => {
     const blackoutElem = document.createElement('div');
 
-    const width = el.dataset.width;
-
-    if (width) {
-      el.style.width = width;
-    }
-
-    const maxWidth = el.dataset.maxWidth;
-
-    if (maxWidth) {
-      el.style.maxWidth = maxWidth;
-    }
-
-    const height = el.dataset.height;
-
-    if (height) {
-      el.style.height = height;
-    }
-
-    const maxHeight = el.dataset.maxHeight;
-
-    if (maxHeight) {
-      el.style.maxHeight = maxHeight;
-    }
-
     blackoutElem.style.display = 'none'; // Avoid modal flash when document load
 
     blackoutElem.classList.add('blackout', 'hidden');

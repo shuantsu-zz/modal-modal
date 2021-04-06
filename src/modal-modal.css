@@ -9,19 +9,41 @@
   z-index: 1;
   justify-content: center;
   align-items: center;
+  padding: 40px;
 }
 .modal {
   background: white;
   display: block;
   border-radius: 6px;
   padding: 15px;
-  max-height: calc(100% - 40px);
+  max-height: 100%;
   overflow: auto;
-  margin: 15px;
 }
 .blackout.hidden {
   display: none;
 }
 .blackout.show {
   display: flex;
+} 
+
+/* Animation */
+.blackout, .modal {
+  transition: .8s all!important;
+}
+
+.blackout.hidden {
+  display: flex!important;
+  opacity: 0;
+  pointer-events: none;
+}
+.blackout.show {
+  display: flex!important;
+  opacity: 1;
+}
+
+.show .modal {
+  transform: scale(1);
+}
+.hidden .modal {
+  transform: scale(.8);
 }
